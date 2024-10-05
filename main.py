@@ -1,4 +1,6 @@
 from Board import print_Board
+from Ascii_art import  logo
+print(logo)
 Board=  {
             '7':' ','8':' ','9':' ',
             '4':' ','5':' ','6':' ',
@@ -75,7 +77,6 @@ def game():
             turn='O'
         else:
             turn='X'
-    
     restart=input(f'Do you want to play Again.(Y/N)').upper()
     if restart == 'Y':
         for key in Board:
